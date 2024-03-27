@@ -54,4 +54,9 @@ button{
     font-size: larger;
     outline: none;
     border-color: transparent;
+    cursor: pointer;
+    color: #fff;
+}
+.add_box button:hover{
+    color: black;
 }
