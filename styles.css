@@ -19,13 +19,39 @@
     border-radius: 10px;
 }
 .to_do_list h2{
-    color: #ff5e62;
+    color: #0d0d0d;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    margin-left: 50px;
+    margin-left: 75px;
 }
 .to_do_list img{
     width: 100px;
     margin-left: 20px;
+}
+.add_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 14px;
+    align-items: center;
+    
+}
+button{
+    padding: 10px 20px;
+    background: #ff5e62;
+    border-radius: 30px;
+    font-size: larger;
+    outline: none;
+    border-color: transparent;
 }
