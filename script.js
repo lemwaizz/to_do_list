@@ -13,6 +13,7 @@ function addTask() {
         li.appendChild(span)
     }
     inputBox.value = "";
+    saveData();
 }
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
@@ -22,3 +23,10 @@ listContainer.addEventListener("click", function(e){
         e.target.parentElement.remove();
     }
 }, false)
+function saveData(){
+    localStorage.setItem("data", listContainer.innerHTML);
+}
+function showList(){
+    listContainer.innerHTML = localStorage.getItem("data");
+}
+showTask();
