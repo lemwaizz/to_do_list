@@ -10,6 +10,16 @@ To get started with this Dockerized ToDo web application, you'll need Docker ins
 
 - Docker: [Installation guide](https://docs.docker.com/get-docker/)
 
+### Assumptions
+
+1. Docker Installation: This assumes Docker is installed on your system. If not, please refer to the [official installation guide](https://docs.docker.com/get-docker/).
+
+2. Operating System Compatibility: The Dockerfile and instructions provided are compatible with Unix-based systems like Linux and macOS.
+
+3. Port Availability: Port 8080 (or any other specified port) is assumed to be available on the host system for running the Docker container. Please ensure that no other service is using this port.
+
+4. Network Access: You are assumed to have network access to pull the base Docker image (`httpd:2.4`) from Docker Hub or any other configured Docker registry.
+
 ### Usage
 
 1. Clone this repository:
@@ -54,17 +64,3 @@ COPY . .
 
 # Expose port 80
 EXPOSE 80
-```
-
-- The base image used is `httpd:2.4`, which provides the Apache HTTP Server version 2.4.
-- The working directory is set to `/usr/local/apache2/htdocs/`, where the Apache server looks for files to serve.
-- All files from the current directory are copied to the working directory within the container.
-- Port 80, which is the default port for HTTP, is exposed to allow external access to the web application.
-
-## Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvement, please feel free to open an issue or create a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
