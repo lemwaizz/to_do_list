@@ -6,6 +6,9 @@ This is a simple To-Do web application Dockerized using httpd (Apache HTTP Serve
 
 To get started with this Dockerized ToDo web application, you'll need Docker installed on your system.
 
+### Dockerhub link
+https://hub.docker.com/repository/docker/lemwaizz/todo4/general
+
 ### Prerequisites
 
 - Docker: [Installation guide](https://docs.docker.com/get-docker/)
@@ -20,6 +23,7 @@ To get started with this Dockerized ToDo web application, you'll need Docker ins
 
 4. Network Access: You are assumed to have network access to pull the base Docker image (`httpd:2.4`) from Docker Hub or any other configured Docker registry.
 
+5. To keep it lightweight, an express.js server set-up script is provided for those interested in setting up a db with the application.
 ### Usage
 
 1. Clone this repository:
