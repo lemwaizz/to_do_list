@@ -62,7 +62,4 @@ listContainer.addEventListener("click", async function(e) {
     } else if (e.target.tagName === "SPAN") {
         e.target.parentElement.remove();
     }
-
-    // Optionally, you can also send a request to update task completion status
-    // based on the state of the task here
 });
