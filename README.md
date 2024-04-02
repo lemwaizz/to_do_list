@@ -23,7 +23,7 @@ https://hub.docker.com/repository/docker/lemwaizz/todo4/general
 
 4. Network Access: You are assumed to have network access to pull the base Docker image (`httpd:2.4`) from Docker Hub or any other configured Docker registry.
 
-5. To keep it lightweight, an express.js server set-up script is provided for those interested in setting up a db with the application.
+5. To keep it lightweight, an express.js server set-up script is provided for those interested in setting up a db with the application. A sample script for integrating node into our js is also provided. The assumption resulting will be that all dependencies will have already been installed in the host machine.
 ### Usage
 
 1. Clone this repository:
